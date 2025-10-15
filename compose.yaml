@@ -1,0 +1,17 @@
+services:
+  helios:
+    build: .
+    image: "docker.io/ptrusr/roflios@sha256:41851dd67a1a22a823a4154dcfa5a99eca57ff351427586bfdaec5885c4425b2"
+    platform: linux/amd64
+    ports:
+      - "1337:1337"                             # Expose Helios RPC port
+    annotations:
+      net.oasis.proxy.ports.1337.custom_domain: ethrpc.rofl.cloud
+    volumes:
+      - helios-data:/root/.helios               # Persistent Helios data storage.
+      - /run/rofl-appd.sock:/run/rofl-appd.sock # appd REST API.
+    environment:
+      - INFURA_API_KEY=${INFURA_API_KEY}
+
+volumes:
+  helios-data:

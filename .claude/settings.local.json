@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:sepolia-checkpoints.helios.dev)",
+      "WebSearch",
+      "Bash(docker compose logs:*)",
+      "Bash(docker compose:*)",
+      "Bash(chmod:*)",
+      "Bash(curl -s -X POST http://localhost:1337 -H \"Content-Type: application/json\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"method\"\":\"\"eth_blockNumber\"\",\"\"params\"\":[],\"\"id\"\":1}')",
+      "Bash(curl -s -X POST http://localhost:1337 -H \"Content-Type: application/json\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"method\"\":\"\"eth_chainId\"\",\"\"params\"\":[],\"\"id\"\":1}')",
+      "Bash(curl -s -X POST https://p1337.m847.opf-testnet-rofl-25.rofl.app -H \"Content-Type: application/json\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"method\"\":\"\"eth_blockNumber\"\",\"\"params\"\":[],\"\"id\"\":1}')",
+      "Bash(curl -s -X POST https://p1337.m847.opf-testnet-rofl-25.rofl.app -H \"Content-Type: application/json\" -d '{\"\"jsonrpc\"\":\"\"2.0\"\",\"\"method\"\":\"\"eth_chainId\"\",\"\"params\"\":[],\"\"id\"\":1}')"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
