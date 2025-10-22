@@ -1,5 +1,8 @@
 name: roflios
+author: Peter Us <peter@u-s.si>
+description: Ethereum Light Client running in ROFL.
 version: 0.1.0
+homepage: https://ethrpc.rofl.cloud
 repository: https://github.com/ptrus/roflios
 tee: tdx
 kind: container
@@ -17,15 +20,15 @@ artifacts:
     runtime: https://github.com/oasisprotocol/oasis-sdk/releases/download/rofl-containers%2Fv0.8.1/rofl-containers#993e66f3b037cdc63896216cde4dc91b4976cc82a698c63123a9bba8710852c4
     compose: compose.yaml
 deployments:
-  default:
-    app_id: rofl1qrdxz237mxd8mccg2l3jxvwcsrnk4pjy4c0806yp
+  testnet:
+    app_id: rofl1qzul9krxsnuanfqqte337utwxr47gqe4zu6rcr5z
     network: testnet
     paratime: sapphire
     admin: roflios_hackaton
-    oci_repository: rofl.sh/842f34c0-e2e4-4a38-a882-88dea77beb50:1760530202
+    oci_repository: rofl.sh/f3e9b5d4-89e4-41d8-9650-7e29908ef7c7:1761138620
     trust_root:
-      height: 28879332
-      hash: c227e67a92dd09c9ec3bd0f0430f5fa7d1926ba5cf773062b794c5e97f5315de
+      height: 28985990
+      hash: 4e4759178f7677aeb8bdda87d3f56da3d505afadd63747d01cb4e5a0f3d0b9d6
     policy:
       quotes:
         pcs:
@@ -33,17 +36,17 @@ deployments:
           min_tcb_evaluation_data_number: 18
           tdx: {}
       enclaves:
-        - id: Eg4y4s7fcjkbljYsWuhYbIcnzVyyx/lo+sLHMQao4H0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-        - id: F9URMhwEqqo3Rw91/pwlKXdte1cqMy98uogwOl8gBagAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: iIqLXOHuWOTHZ1J/ScP1x9xp9mkfBuTRiIWmcJ+zhh4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: Y6JOHkywcwhvQJOvxKc3KPw+ZobyobMW16+yZf6KlRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
       endorsements:
-        - any: {}
+        - provider_instance_admin: oasis1qzql9cw9ly746jren7j66jscd36h5c3mfq6d6mct
       fees: endorsing_node
       max_expiration: 3
     secrets:
       - name: INFURA_API_KEY
-        value: pGJwa1ggrzXKlsQXG7aTRO5+RaspmRnJ2u84Bnzbg+qp084SfnRkbmFtZVgefJl9pEmpIp3RxN842CgaKENikAKkg1R17BXtOBOBZW5vbmNlTyiKjZtrHW+MmqJdXwwdx2V2YWx1ZVgwm5lM8tdM09BPIL6zuwKKVGqLbG8OEdoN9JRahA9F3NUBOKUXuye9g4igLUZa9REc
+        value: pGJwa1ggQoyyB9oHjcbBmzFViQpWaIHvUps/+E6IQym29umwJjRkbmFtZVgeX+J9ptejUU4OQma99ndCuBFd8UHZKn0f4tOuR7ipZW5vbmNlT3JTtWMk7z0WO3To/QRl9GV2YWx1ZVgwbVctutzOu6VcJflhY4/r5JFsiXWYc3JmHVyt7prjfCTkHRu4BXMID3hTt2qLv1dh
     machines:
       default:
         provider: oasis1qp2ens0hsp7gh23wajxa4hpetkdek3swyyulyrmz
         offer: playground_short
-        id: 000000000000034f
+        id: "0000000000000383"

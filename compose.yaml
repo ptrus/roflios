@@ -1,7 +1,7 @@
 services:
   helios:
     build: .
-    image: "docker.io/ptrusr/roflios@sha256:41851dd67a1a22a823a4154dcfa5a99eca57ff351427586bfdaec5885c4425b2"
+    image: "docker.io/ptrusr/roflios@sha256:bdc41eb1634e2464f35b8cc09bd92d72ad57b3d04137ea8b345fd1cbb6fb6608"
     platform: linux/amd64
     ports:
       - "1337:1337"                             # Expose Helios RPC port
