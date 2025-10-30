@@ -1,6 +1,6 @@
-# Rolf in Helios Deployment
+# ROFL in Helios Deployment
 
-This repository contains the deployment configuration for Rolf running in Helios at: https://ethrpc.rofl.cloud
+This repository contains the deployment configuration for ROFL running in Helios at: https://ethrpc.rofl.cloud
 
 ## Verification
 
@@ -23,5 +23,5 @@ Manifest enclave identities MATCH on-chain enclave identities.
 
 ## Running Your Own Instance
 
-For a more general guide on how to run your own Rolf in Helios instance, see:
+For a more general guide on how to run your own ROFL in Helios instance, see:
 https://github.com/ptrus/rofl-helios
