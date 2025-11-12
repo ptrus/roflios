@@ -1,9 +1,9 @@
 name: roflios
-author: Peter Us <peter@u-s.si>
-description: Ethereum Light Client running in ROFL.
 version: 0.1.0
-homepage: https://ethrpc.rofl.cloud
 repository: https://github.com/ptrus/roflios
+author: Peter Us <peter@u-s.si>
+homepage: https://ethrpc.rofl.cloud
+description: Ethereum Light Client running in ROFL.
 tee: tdx
 kind: container
 resources:
@@ -24,7 +24,7 @@ deployments:
     app_id: rofl1qzul9krxsnuanfqqte337utwxr47gqe4zu6rcr5z
     network: testnet
     paratime: sapphire
-    admin: roflios_hackaton
+    admin: ptrus_testnet
     oci_repository: rofl.sh/f3e9b5d4-89e4-41d8-9650-7e29908ef7c7:1761138620
     trust_root:
       height: 28985990
@@ -36,8 +36,8 @@ deployments:
           min_tcb_evaluation_data_number: 18
           tdx: {}
       enclaves:
-        - id: iIqLXOHuWOTHZ1J/ScP1x9xp9mkfBuTRiIWmcJ+zhh4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
-        - id: Y6JOHkywcwhvQJOvxKc3KPw+ZobyobMW16+yZf6KlRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: cwJLxEuKlUAOn3ROF1KqWm9uvfkLOoEFpXQFMkRVa3QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        - id: slXkIPASL8IMuwcTT3+JgMVAudMQpdCMf9iO7yTYFd8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
       endorsements:
         - provider_instance_admin: oasis1qzql9cw9ly746jren7j66jscd36h5c3mfq6d6mct
       fees: endorsing_node
